@@ -1,0 +1,20 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#myButton").click(function(){
+            $.ajax({
+                url: "your_php_script.php",
+                type: "POST",
+                data: {
+                    // Data
+                },
+                success: function(response) {
+                    // handle success
+                },
+                error: function(xhr, status, error) {
+                    // handle error
+                }
+            });
+        });
+    });
+</script>
